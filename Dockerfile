@@ -20,8 +20,6 @@ RUN a2enmod rewrite
 
 RUN mkdir -p /app/src
 
-CMD chown -R www-data:www-data /var/www/
-
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 CMD composer install
