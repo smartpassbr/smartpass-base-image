@@ -21,9 +21,3 @@ RUN a2enmod rewrite
 RUN mkdir -p /app/src
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-CMD composer install
-
-CMD ls
-
-EXPOSE 80
