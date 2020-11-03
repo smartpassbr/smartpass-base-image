@@ -4,6 +4,7 @@ RUN apt update
 RUN apt upgrade -y
 
 RUN apt update && apt install -y bash git zip unzip curl firebird-dev
+RUN apt install -y imagemagick
 
 RUN apt install -y libcurl4
 RUN apt install -y libmcrypt-dev
