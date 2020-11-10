@@ -14,7 +14,7 @@ RUN apt install -y libldap2-dev
 RUN apt install -y libxml2-dev
 RUN apt install -y libssl-dev
 
-RUN apt install wkhtmltopdf
+RUN apt install -y wkhtmltopdf
 
 RUN docker-php-ext-install interbase
 RUN docker-php-ext-install pdo_firebird
