@@ -1,5 +1,6 @@
 FROM php:7.2-apache
 
+RUN locale-gen pt_BR.UTF-8
 RUN locale -a
 
 RUN apt update
